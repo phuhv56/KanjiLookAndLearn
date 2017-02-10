@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A12B6D710EEC9844CD54D8 /* Pods_KanjiLookAndLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5D1CD64BA0441C4F503C8D /* Pods_KanjiLookAndLearn.framework */; };
 		6711AE681E4D756600BBCE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6711AE671E4D756600BBCE83 /* AppDelegate.swift */; };
 		6711AE6A1E4D756600BBCE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6711AE691E4D756600BBCE83 /* ViewController.swift */; };
 		6711AE6D1E4D756600BBCE83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6711AE6B1E4D756600BBCE83 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		6711AE6E1E4D756600BBCE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6711AE711E4D756600BBCE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6711AE731E4D756600BBCE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5D1CD64BA0441C4F503C8D /* Pods_KanjiLookAndLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanjiLookAndLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B3339F8BDC79528CDF7FE2 /* Pods-KanjiLookAndLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiLookAndLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiLookAndLearn/Pods-KanjiLookAndLearn.release.xcconfig"; sourceTree = "<group>"; };
+		D8743A481454C0C17929AF77 /* Pods-KanjiLookAndLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanjiLookAndLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KanjiLookAndLearn/Pods-KanjiLookAndLearn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A12B6D710EEC9844CD54D8 /* Pods_KanjiLookAndLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4890FBF9852F621D6EDAC274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D1CD64BA0441C4F503C8D /* Pods_KanjiLookAndLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6711AE5B1E4D756600BBCE83 = {
 			isa = PBXGroup;
 			children = (
 				6711AE661E4D756600BBCE83 /* KanjiLookAndLearn */,
 				6711AE651E4D756600BBCE83 /* Products */,
+				EB99ED57340E872B9D94B1D2 /* Pods */,
+				4890FBF9852F621D6EDAC274 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = KanjiLookAndLearn;
 			sourceTree = "<group>";
 		};
+		EB99ED57340E872B9D94B1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8743A481454C0C17929AF77 /* Pods-KanjiLookAndLearn.debug.xcconfig */,
+				B2B3339F8BDC79528CDF7FE2 /* Pods-KanjiLookAndLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6711AE761E4D756600BBCE83 /* Build configuration list for PBXNativeTarget "KanjiLookAndLearn" */;
 			buildPhases = (
+				FCC099DA14F9A95F2E425E24 /* [CP] Check Pods Manifest.lock */,
 				6711AE601E4D756600BBCE83 /* Sources */,
 				6711AE611E4D756600BBCE83 /* Frameworks */,
 				6711AE621E4D756600BBCE83 /* Resources */,
+				FCA757681F6BE6797C04E946 /* [CP] Embed Pods Frameworks */,
+				96FA9ED1B7B16C9D70873EB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96FA9ED1B7B16C9D70873EB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiLookAndLearn/Pods-KanjiLookAndLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA757681F6BE6797C04E946 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KanjiLookAndLearn/Pods-KanjiLookAndLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC099DA14F9A95F2E425E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6711AE601E4D756600BBCE83 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		6711AE771E4D756600BBCE83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8743A481454C0C17929AF77 /* Pods-KanjiLookAndLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6TZYCS9U4;
@@ -272,6 +348,7 @@
 		};
 		6711AE781E4D756600BBCE83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B3339F8BDC79528CDF7FE2 /* Pods-KanjiLookAndLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6TZYCS9U4;
